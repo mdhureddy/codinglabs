@@ -1,0 +1,1028 @@
+/* ==============================
+   GLOBAL STYLES
+============================== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #aaf0ae;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar {
+  background: linear-gradient(90deg, #0d1e01, #06b966);
+  padding: 1rem;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+/* ==============================
+   HERO / HOME PAGE
+============================== */
+.hero-section {
+  background: url("y-group_23-2148990314.jpg") no-repeat center center/cover;
+  color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* ==============================
+   COURSE CARDS (IT TRAINING)
+============================== */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* ==============================
+   INTERNSHIP PAGE
+============================== */
+.internship-section {
+  background: #e3f2fd;
+  padding: 50px 0;
+  border-radius: 15px;
+}
+
+.internship-card {
+  background: white;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.internship-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ==============================
+   PLACEMENT PAGE
+============================== */
+.placement-section {
+  background: linear-gradient(to right, #007bff, #00bfff);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
+.placement-section h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.placement-company {
+  background: white;
+  color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.placement-company:hover {
+  transform: scale(1.05);
+  background: #f1f1f1;
+}
+
+/* ==============================
+   FAQ SECTION
+============================== */
+.accordion-button:not(.collapsed) {
+  background-color: #007bff;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   CONTACT PAGE
+============================== */
+.contact-section {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  color: #007bff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ==============================
+   HOME BUTTON (COMMON)
+============================== */
+.btn-outline-primary {
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ==============================
+   FOOTER
+============================== */
+.footer {
+  background: #212529;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #ffd700;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+/* ==== Carousel Custom Styling ==== */
+.carousel {
+  background-color: #0d1b2a; /* Dark navy background */
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+.carousel-item {
+  color: #f40909; /* White text */
+  text-align: center;
+}
+
+.carousel-item h5 {
+  color: #ffcc00; /* Highlight color for headings */
+  font-weight: bold;
+}
+
+.carousel-item p {
+  color: #e50606;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ffcc00; /* Yellow indicators */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Make arrows white */
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Optional hover animation */
+.carousel-item img {
+  transition: transform 0.5s ease;
+}
+.carousel-item:hover img {
+  transform: scale(1.03);
+}
+
+/* about image css */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/*  */
+.newsletter-container {
+  background: radial-gradient(circle at center, #064c4b, #003c3a);
+  border-radius: 20px;
+}
+
+.newsletter-input input {
+  border: none;
+  outline: none;
+  height: 50px;
+}
+
+.newsletter-input button {
+  background-color: #008b8b;
+  color: white;
+  height: 50px;
+  border: none;
+  padding: 0 20px;
+}
+
+.newsletter-input button:hover {
+  background-color: #00a8a8;
+}
+/*  */
+.features-section {
+  background: #f8fafc;
+  padding: 60px 0;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  text-align: left;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #e6f4ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper i {
+  color: #198754; /* Bootstrap success green */
+  font-size: 28px;
+}
+
+.feature-card h5 {
+  font-size: 1.1rem;
+  color: #212529;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Responsive: smaller padding on mobile */
+@media (max-width: 768px) {
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-wrapper i {
+    font-size: 24px;
+  }
+}
+/*  */
+.scoop-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 60px 100px;
+  background: linear-gradient(135deg, #eaf9ff, #ffffff);
+  min-height: 100vh;
+  gap: 50px;
+}
+
+/* Left Section */
+.scoop-left .badge {
+  display: inline-block;
+  background: linear-gradient(to right, #007f5f, #ffb703);
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.scoop-left h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1a1a1a;
+}
+
+.highlight {
+  color: #a6821e;
+}
+
+.scoop-left .desc {
+  color: #3a3a3a;
+  font-size: 17px;
+  margin: 20px 0 40px;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-card h3 {
+  color: #007f5f;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Right Section */
+.scoop-right {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 #006a6a33;
+}
+
+.scoop-right h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.booking-form input:focus {
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 4px rgba(0, 150, 136, 0.3);
+}
+
+.booking-form button {
+  background: #007f7f;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: #005f5f;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .scoop-container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+  .scoop-right {
+    margin-top: 30px;
+  }
+}
+/*  */
+.course-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #f1fbf8, #e8f9f3);
+  padding: 80px 20px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.text-side {
+  max-width: 400px;
+}
+
+.text-side h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  background: white;
+  border: 2px solid #00a67d;
+  color: #00a67d;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.explore-btn:hover {
+  background: #00a67d;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-card {
+  background: #fff;
+  width: 330px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 18px;
+}
+
+.course-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+}
+
+.rating span {
+  color: #ffb400;
+  font-size: 1.2rem;
+}
+/*  */
+.career-section {
+  background-color: #f9fffd;
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1d1d1d;
+}
+
+.card-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card-box:hover {
+  transform: translateY(-4px);
+}
+
+.top-part {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.number {
+  background-color: #007b6f;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box {
+  border: 1px dashed #00a67d;
+  background: #e7f9f5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box img {
+  width: 30px;
+  height: 30px;
+}
+
+.card-box h5 {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #1d1d1d;
+}
+
+.card-box p {
+  font-size: 15px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.call-card {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.call-card img {
+  width: 20px;
+  margin-right: 8px;
+}
+/*  */
+/* Hide default Bootstrap accordion arrow */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Add + or - sign manually */
+.accordion-button {
+  position: relative;
+  font-size: 1.1rem;
+  background-color: #01150b;
+}
+
+.accordion-button::before {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 1.5rem;
+  color: 27, 61, 36; /* Bootstrap primary color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Change + to – when opened */
+.accordion-button:not(.collapsed)::before {
+  content: "–";
+  color: #33a57d;
+  transform: rotate(180deg);
+}
+
+/* Add a nice hover effect */
+.accordion-button:hover {
+  background-color: #0e9a8f;
+}
+
+/* Optional: add slight border-radius for a soft look */
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.course-card {
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.course-card img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.text-warning {
+  font-size: 1.1rem;
+}
+/* what app button */
+/* ===================== WhatsApp Floating Button (Left Side) ===================== */
+.whatsapp-float-left {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 25px;
+  left: 25px; /* 👈 Moved to left side */
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float-left:hover {
+  transform: scale(1.1);
+  background-color: #20ba5a;
+  color: #fff;
+}
+/* it trainging css */
+.courses {
+  padding: 60px 10%;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.courses-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.course-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.course-rating {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.course-rating svg {
+  margin-right: 3px;
+}
+
+@media (max-width: 768px) {
+  .courses {
+    padding: 40px 5%;
+  }
+
+  .course-img {
+    height: 160px;
+  }
+}
+/* from page in intership css  */
+.internship-section {
+  background: linear-gradient(135deg, #e6f4f1, #eaf6ff);
+  padding: 80px 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+.internship-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.internship-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.internship-left h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.highlight {
+  color: #cba135;
+  font-weight: 700;
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: #ff6188;
+  border-radius: 2px;
+}
+
+.subtitle {
+  margin: 15px 0 40px;
+  color: #06686b;
+  font-size: 1.1rem;
+}
+
+.info-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 2;
+}
+
+/* RIGHT SIDE FORM */
+.internship-right {
+  flex: 1;
+  min-width: 320px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.internship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.internship-form input,
+.internship-form select {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.internship-form input:focus,
+.internship-form select:focus {
+  border-color: #007f7f;
+  box-shadow: 0 0 6px rgba(0, 127, 127, 0.3);
+}
+
+.apply-btn {
+  background-color: #007f7f;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #005f5f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .internship-container {
+    flex-direction: column;
+  }
+
+  .internship-left,
+  .internship-right {
+    width: 100%;
+  }
+}
+/*  */
+.testimonial-carousel-section {
+  background: linear-gradient(135deg, #f2f2f3 0%, #059831 100%);
+  position: relative;
+  color: #cc0d0d;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  border-top: 6px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(247, 245, 245, 0.918);
+}
+
+.blue-border {
+  border-top-color:blue;
+}
+
+.yellow-border {
+  border-top-color: #ffd700;
+}
+
+.green-border {
+  border-top-color: #00c851;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  width: 2rem;
+  height: 2rem;
+}
+/* CONTECT SECTION  */
+/* Light mint background */
+.contact-section {
+  background-color: #eafaf6;
+}
+
+/* Slight card glow */
+.card {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Inputs styling */
+.form-control {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #007f83;
+}
